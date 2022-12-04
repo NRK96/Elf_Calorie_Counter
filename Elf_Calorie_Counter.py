@@ -1,9 +1,17 @@
+import os.path
+import sys
+
 # Setup variables for future computation.
 elf_calorie_count = []
 current_elf_calories = 0
+filepath = "Resources\\Elf_Calorie_Count.txt"
+
+# Check that file exists, if not exit with error message.
+if not os.path.isfile(filepath):
+    sys.exit("Error - File could not be found.")
 
 # Open file and read it in line by line.
-file = open("Resources\\Elf_Calorie_Count.txt", "r")
+file = open(filepath, "r")
 lines = file.readlines()
 
 for line in lines:
