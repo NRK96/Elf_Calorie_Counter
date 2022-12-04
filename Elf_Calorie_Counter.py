@@ -22,3 +22,6 @@ elf_calorie_count.sort(reverse=True)
 
 # Day 1, Part 1 Solution.
 print("Calorie count for the elf with the most calories: " + str(elf_calorie_count[0]))
+
+# Day 1, Part 2 Solution.
+print("Calorie count for the top three elves: " + str(elf_calorie_count[0] + elf_calorie_count[1] + elf_calorie_count[2]))
