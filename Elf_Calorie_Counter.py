@@ -16,3 +16,9 @@ for line in lines:
         current_elf_calories += int(line)
 
 file.close()
+
+# Reverse sort so we know that the first position has the highest number of calories, second position has the second highest and so on.
+elf_calorie_count.sort(reverse=True)
+
+# Day 1, Part 1 Solution.
+print("Calorie count for the elf with the most calories: " + str(elf_calorie_count[0]))
